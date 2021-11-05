@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'supers';
+
+.ubication{
+    @extend %space-around;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: absolute;
+    width: 280px;
+    height: 65px;
+    left: 0px;
+    top: 800px;
+    background-color: $r_background;
+    border-radius: 0px 100px 100px 0px;
+    border: none;
+    color: $w_background;
+    font-family: $h_font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 90px;
+}
+
+.ubication:hover{
+    background-color:$r_background_hovered;
+    cursor: pointer;
+}

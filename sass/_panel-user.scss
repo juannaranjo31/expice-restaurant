@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'supers';
+
+.panel__user{
+    width: 100%;
+    height: 10%;
+    padding-left: 20%;
+    font-family: $h_font;
+    @extend %align-center;
+
+    .panel__user-link{
+        @extend %align-center;
+        @extend %circle;
+        background-color: $w_background;
+        width: 52px;
+        height: 52px;
+        font-size: 1.5em;
+        color: $txt_color;
+    }
+
+    .panel__user-link--drop{
+        text-decoration: none;
+        margin-left: 10px;
+        color: $w_background;
+        
+        .panel__user-icon--drop{
+            margin-left: 5px;
+        }
+    }
+}

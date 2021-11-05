@@ -1,0 +1,48 @@
+@import 'variables';
+
+.panel__nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .panel__brand{
+        color: $r_background;
+        font-family: $h_font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 108px;
+    }
+
+    .panel__menu{
+        width: 45%;
+        font-family: $h_font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        padding-right: 10rem;
+
+
+        .panel__menu-list{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+
+            .panel__menu-item {
+                .panel__menu-link {
+                    text-decoration: none;
+                    color: $txt_color;
+                }
+
+                .panel__menu-link:hover{
+                    color: $r_background;
+                }
+            }
+        }
+    }
+
+}

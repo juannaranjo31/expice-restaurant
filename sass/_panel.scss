@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import 'variables';
+
+.panel{
+    background: $w-background;
+    width: 75%;
+    height: 100vh;
+}
+
+.panel--right{
+    background-color: $r_background;
+    width: 25%;
+}
