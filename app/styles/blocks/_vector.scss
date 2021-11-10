@@ -1,0 +1,14 @@
+.vector{
+    position: absolute;
+    width: 350px;
+    height: 320px;
+    left: 990px;
+    top: 200px;
+    background-image: url('../../images/vector-bg.svg');
+    background-size: cover;
+
+    &--bottom{
+        height: 280px;
+        top: 550px;    
+    }
+}

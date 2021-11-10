@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'supers';
+@import '../colors/colors';
+@import '../adds/superclass';
 
 .ubication{
     @extend %space-around;
@@ -19,9 +19,9 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 90px;
-}
 
-.ubication:hover{
-    background-color:$r_background_hovered;
-    cursor: pointer;
+    &:hover{
+        background-color:$r_background_hovered;
+        cursor: pointer;
+    }
 }

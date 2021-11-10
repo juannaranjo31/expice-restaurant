@@ -1,0 +1,17 @@
+.image{
+    position: absolute;
+    width: 750px;
+    height: 750px - 8px;
+    left: 1050px;
+    top: 180px;
+    background-image: url('../images/—Pngtree—delicious\ food_568171\ 1.png');
+    background-size: cover;
+
+    &--top{
+        width: 480px;
+        height: 900px;
+        left: 1150px;
+        top: -20px;
+        background-image: url('../images/—Pngtree—lettuce_1175257\ 1.png');
+    }
+}
