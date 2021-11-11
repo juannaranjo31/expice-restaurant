@@ -3,10 +3,17 @@
 @import './blocks/image';
 @import './blocks/ubication';
 @import './blocks/vector';
+@import './blocks/description';
+@import './blocks/card';
+@import './colors/colors';
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: $w_background;
 }

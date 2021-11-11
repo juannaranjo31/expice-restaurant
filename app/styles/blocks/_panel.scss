@@ -3,7 +3,6 @@
 @import '../adds/superclass';
 
 .panel{
-    background: $w-background;
     width: 75%;
     height: 100vh;
 
@@ -187,6 +186,12 @@
     &--right{
         background-color: $r_background;
         width: 25%;
+        height: 110vh;
+    }
+
+    &--description{
+        width: 100%;
+        background: transparent;
     }
 }
 

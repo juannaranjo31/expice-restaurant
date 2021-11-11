@@ -1,0 +1,33 @@
+@import '../colors/colors';
+@import '../../fonts/fonts';
+@import '../adds/superclass';
+
+.description{
+    @extend %space-between;
+    border-left: 1.7rem solid $r_background;
+    padding-left: 3rem;
+    padding-right: 13rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 12vh;
+    margin-left: 15vh;
+    width: 90%;
+    font-family: $h_font;
+    
+
+    &__title{
+        color: $txt_color;
+        width: 40%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5em;
+        text-align: left;
+    }
+
+    &__paragraph{
+        width: 38%;
+        color: $description_txt;
+        margin-top: 2.4rem;
+        font-size: 0.8em;
+    }
+}
