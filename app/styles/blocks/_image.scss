@@ -14,4 +14,22 @@
         top: -20px;
         background-image: url('../images/—Pngtree—lettuce_1175257\ 1.png');
     }
+
+    &--lettuce-left{
+        position: relative;
+        width: 600px;
+        height: 142vh;
+        left: -100px;
+        top: -40px;
+        background-image: none;
+    }
+
+    &--lettuce-right{
+        position: relative;
+        width: 400px;
+        height: 65vh;
+        left: 90px;
+        top: -40px;
+        background-image: none;
+    }
 }
