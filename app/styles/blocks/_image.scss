@@ -1,35 +1,33 @@
-.image{
-    position: absolute;
-    width: 750px;
-    height: 750px - 8px;
-    left: 1050px;
-    top: 180px;
-    background-image: url('../images/—Pngtree—delicious\ food_568171\ 1.png');
-    background-size: cover;
+.image {
+  position: absolute;
+  right: 140px;
+  top: 130px;
+  width: 800px;
+  height: 792px;
 
-    &--top{
-        width: 480px;
-        height: 900px;
-        left: 1150px;
-        top: -20px;
-        background-image: url('../images/—Pngtree—lettuce_1175257\ 1.png');
+  &--lettuce {
+    top: -55px;
+    right: 190px;
+    bottom: 170px;
+    width: 584px;
+    height: 900px;
+
+    &left {
+      position: relative;
+      width: 600px;
+      height: 1533.6px;
+      left: -3px;
+      top: -40px;
+      background-image: none;
     }
 
-    &--lettuce-left{
-        position: relative;
-        width: 600px;
-        height: 142vh;
-        left: -100px;
-        top: -40px;
-        background-image: none;
+    &right {
+      position: relative;
+      width: 400px;
+      height: 702px;
+      left: 40px;
+      top: -40px;
+      background-image: none;
     }
-
-    &--lettuce-right{
-        position: relative;
-        width: 400px;
-        height: 65vh;
-        left: 90px;
-        top: -40px;
-        background-image: none;
-    }
+  }
 }

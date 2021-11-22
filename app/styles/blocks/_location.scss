@@ -1,0 +1,23 @@
+.location {
+  @extend %space-around;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  width: 280px;
+  height: 65px;
+  top: 150px;
+  right: 120px;
+  background-color: $torch-red;
+  color: $seashell-peach;
+  border-radius: 0px 100px 100px 0px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 90px;
+
+  &:hover {
+    background-color: $carmine;
+    cursor: pointer;
+  }
+}

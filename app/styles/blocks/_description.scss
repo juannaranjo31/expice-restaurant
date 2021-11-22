@@ -1,49 +1,33 @@
-@import '../colors/colors';
-@import '../../fonts/fonts';
-@import '../adds/superclass';
+.description {
+  @extend %space-between;
+  border-left: 27.2px solid $torch-red;
+  padding-left: 48px;
+  padding-right: 208px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 140px;
+  margin-left: 120px;
+  width: 90%;
 
-.description{
-    @extend %space-between;
-    border-left: 1.7rem solid $r_background;
-    padding-left: 3rem;
-    padding-right: 13rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-top: 12vh;
-    margin-left: 15vh;
-    width: 90%;
-    font-family: $h_font;
-    
+  &__title {
+    color: $jakarta;
+    width: 40%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
 
-    &__title{
-        color: $txt_color;
-        width: 40%;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 2.5em;
-        text-align: left;
-
-        &--services{
-            font-size: 2em;
-        }
+    &--booking{
+      margin-top: 15px;
+      margin-bottom: 35px;
+      font-size: 30px;
+      width: auto;
     }
+  }
 
-    &__paragraph{
-        width: 38%;
-        color: $description_txt;
-        margin-top: 2.4rem;
-        font-size: 0.8em;
-
-        &--services{
-            width: 45%;
-            font-size: 0.65em;
-        }
-    }
-
-    &--services{
-        padding-top: 0;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        padding-right: 37rem;
-    }
+  &__paragraph {
+    width: 38%;
+    color: $dove-gray;
+    margin-top: 38.4px;
+    font-size: 12.8px;
+  }
 }

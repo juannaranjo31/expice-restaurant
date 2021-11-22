@@ -1,0 +1,32 @@
+.filter {
+  @extend %flex-column;
+
+  &__link {
+    text-decoration: none;
+    color: $jakarta;
+  }
+
+  &__icon {
+    color: $torch-red;
+  }
+
+  &__input {
+    border: none;
+    color: $jakarta;
+    font-weight: 300;
+    outline: none;
+
+    &[type="date"]::-webkit-calendar-picker-indicator,
+    &[type="time"]::-webkit-calendar-picker-indicator,
+    &[type="number"]::-webkit-inner-spin-button {
+      display: none;
+    }
+
+  }
+
+  &__label{
+    color: $jakarta;
+    font-size: 14px;
+    margin-left: -35px;
+  }
+}

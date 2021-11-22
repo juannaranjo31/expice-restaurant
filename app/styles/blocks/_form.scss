@@ -1,0 +1,45 @@
+.form {
+  @extend %space-around;
+  width: 670px;
+  height: 90px;
+
+  &__input {
+    width: 222px;
+    height: 18px;
+    text-align: center;
+    border: none;
+    background: transparent;
+
+    &::placeholder {
+      color: $jakarta;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    @extend %align-center;
+    border: none;
+    color: $seashell-peach;
+    background-color: $torch-red;
+    width: 128px;
+    height: 62px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 90px;
+
+    &:hover {
+      background-color: $carmine;
+      cursor: pointer;
+    }
+
+    &--bordered {
+      border-radius: 60px 0px 0px 0px;
+      width: 200px;
+      height: 72px;
+    }
+  }
+}

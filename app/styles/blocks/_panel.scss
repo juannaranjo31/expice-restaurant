@@ -1,210 +1,113 @@
-@import '../colors/colors';
-@import '../../fonts/fonts';
-@import '../adds/superclass';
+.panel {
+  width: 75%;
+  height: 100vh;
 
-.panel{
-    width: 75%;
-    height: 100vh;
+  &__title {
+    color: $jakarta;
+    font-size: 200px;
+    opacity: 0.05;
 
-    &__content{
-        width: 100%;
-        height: 88.5vh;
-        padding-top: 4%;
-        padding-left: 132px;
+    &--principal {
+      width: 757px;
+      font-size: 72px;
+      margin-top: -90px;
+      font-weight: bold;
+      opacity: 1;
+    }
+  }
 
-        &-hide-title{
-            width: 506px;
-            height: 179px;
-            font-family: $h_font;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 200px;
-            line-height: 300px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            text-transform: capitalize;
-            color: $txt_color;
-            opacity: 0.05;
-        }
-    
-        &-title{
-            margin-bottom: 50px;
-            width: 757px;
-            height: 157px;
-            font-family: $h_font;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 72px;
-            line-height: 90px;
-            color: $txt_color;
-        }
-    
-        &-form{
-            
-            @extend %space-around;
-            width: 670px;
-            height: 90px;
+  &__session {
+    @extend %align-center;
+    width: 100%;
+  }
 
+  &__user {
+    @extend %align-center;
+    @extend %circle;
+    width: 45px;
+    height: 42px;
+    background-color: $seashell-peach;
+    font-size: 22px;
+    color: $jakarta;
+    text-decoration: none;
 
-            &-input{
-                width: 222px;
-                height: 18px;
-                text-align: center;
-                border: none;
-                background: transparent;
-
-                &::placeholder{
-                    color: $txt_color;
-                    font-family: $h_font;
-                }
-
-                &:focus{
-                    outline: none
-                }
-            }
-
-
-    
-            &-button{
-                @extend %align-center;
-                border: none;
-                width: 8rem;
-                height: 3.87rem;
-                background-color: $r_background;
-                font-family: $h_font;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 30px;
-                line-height: 90px;
-                color: $w_background;
-
-                &:hover{
-                    background-color: $r_background_hovered;
-                    cursor: pointer;
-                }
-
-                &--bordered{
-                    border-radius: 60px 0px 0px 0px;
-                    width: 200px;
-                    height: 72px;
-                }
-            }
-    
-        }
-
+    &-state {
+      @extend %circle;
+      position: relative;
+      bottom: 15px;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      background-color: $sea-green;
     }
 
-    &__nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    &-drop {
+      text-decoration: none;
+      color: $seashell-peach;
 
-        &-brand{
-            color: $r_background;
-            font-family: $h_font;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 72px;
-            line-height: 108px;
-        }
-
-        &-menu{
-
-            width: 45%;
-            font-family: $h_font;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-            padding-right: 10rem;
-
-            &-list{
-                list-style: none;
-                display: flex;
-                justify-content: space-around;
-
-                &-item{
-                    &-link{
-                        text-decoration: none;
-                        color: $txt_color;
-
-                        &:hover{
-                            color: $r_background;
-                        }
-                    }
-                }
-            }
-        }
+      &:hover {
+        color: $jakarta;
+      }
     }
+  }
 
-    &__user{
-        width: 100%;
-        height: 10%;
-        padding-left: 20%;
-        font-family: $h_font;
-        @extend %align-center;
+  &__pagination {
+    width: 100%;
+    @extend %align-center;
 
-        &-link{
-            @extend %align-center;
-            @extend %circle;
-            background-color: $w_background;
-            width: 52px;
-            height: 52px;
-            font-size: 1.5em;
-            color: $txt_color;
+    &-btn {
+      z-index: 1;
+      margin: 20px;
+      color: $seashell-peach;
+      font-size: 40px;
 
-            &-connection{
-                position: absolute;
-                width: 15px;
-                height: 15px;
-                left: 1697px;
-                top: 25px;
-                border-radius: 50%;
+      &:hover {
+        color: $jakarta;
+        cursor: pointer;
+      }
 
-                &--online{
-                    background: $online;
-                }
-
-                &--offline{
-                    background: $offline;
-                }
-            }
-
-            &--drop{
-                text-decoration: none;
-                margin-left: 10px;
-                color: $w_background;
-            }
-        }
-
-        &-icon{
-            &--drop{
-                margin-left: 5px;
-            }
-        }
-
-        
+      &--cards {
+        @extend %flex-column;
+        justify-content: center;
+        text-align: right;
+        color: $torch-red;
+        width: 200px;
+        text-decoration: none;
+        font-size: 15px;
+      }
     }
+  }
 
-    &--right{
-        background-color: $r_background;
-        width: 25%;
-        height: 110vh;
-    }
+  &__icon {
+    font-size: 70px;
+  }
 
-    &--description{
-        width: 100%;
-        background: transparent;
-    }
+  &--session {
+    @extend %flex-column;
+    justify-content: space-between;
+    width: 25%;
+    height: 115vh;
+    background-color: $torch-red;
+    padding-top: 20px;
+    padding-bottom: 150px;
+  }
 
-    &--secondarybg{
-        width: 100%;
-        background: $background_secondary;
-        overflow: hidden;
-        @extend %align-center;
-    }
+  &--hero {
+    width: 100%;
+    height: 86vh;
+    padding-left: 120px;
+  }
+
+  &--description {
+    width: 100%;
+    background: transparent;
+  }
+
+  &--booking{
+    @extend %align-center;
+    width: 100%;
+    background: $peach-cream;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }
-

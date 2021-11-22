@@ -1,21 +1,15 @@
+@import '../fonts/fonts';
+@import './colors/colors';
+@import './adds/superclass';
+@import './core/core';
 @import './blocks/page';
 @import './blocks/panel';
+@import './blocks/nav';
+@import './blocks/form';
+@import './blocks/location';
 @import './blocks/image';
-@import './blocks/ubication';
-@import './blocks/vector';
+@import './blocks/ellipse';
 @import './blocks/description';
 @import './blocks/card';
-@import './blocks/advbooking';
-@import './blocks/services';
-@import './colors/colors';
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body{
-  background-color: $w_background;
-}
+@import './blocks/booking';
+@import './blocks/filter';

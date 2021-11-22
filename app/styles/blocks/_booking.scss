@@ -1,0 +1,22 @@
+.booking{
+  @extend %align-center-columns;
+  width: 1200px;
+  height: 448px;
+  background-color: $seashell-peach;
+  margin-left: -300px;
+
+  &__line{
+    height: 11.2px;
+    width: 13%;
+    background-color: $torch-red;
+    border: none;
+  }
+  
+  &__filters{
+    @extend %space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 400px;
+    margin-top: 40px;
+  }
+}
