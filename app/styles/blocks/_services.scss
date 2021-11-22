@@ -1,0 +1,148 @@
+.services {
+  @extend %column-wrap-center;
+  width: 100%;
+  height: 72%;
+  margin-top: 70px;
+  background-image: url("../../images/vector-bg.svg");
+  background-repeat: round;
+  background-size: auto;
+
+  &__info {
+    width: 320px;
+    display: flex;
+    justify-content: flex-end;
+
+    &--delivery{
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    width: 11rem;
+    font-weight: 600;
+    color: $jakarta;
+    margin-left: 8px;
+
+    &--right {
+      text-align: right;
+    }
+
+    &--delivery {
+      margin-left: 0;
+      width: 60%;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    height: 50%;
+    @extend %align-center;
+
+    &--delivery{
+      height: 75%;
+      width: 30%;
+  }
+  }
+
+  &__img {
+    @extend %align-center;
+    width: 320px;
+    height: 272px;
+    background-color: $peach-cream;
+
+    &-src {
+      height: 80%;
+      width: 80%;
+
+      &--delivery {
+        height: 240px;
+        width: 240px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &--delivery {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+  }
+
+  &__paragraph {
+    width: 40%;
+    margin-top: 16px;
+    text-align: center;
+    color: $dove-gray;
+    font-size: 13.15px;
+
+    &--desc {
+      position: relative;
+      right: 640px;
+      top: 48px;
+      width: 25%;
+    }
+
+    &--desc-right {
+      position: relative;
+      top: 50px;
+      right: 216px;
+      width: 25%;
+    }
+
+    &-line {
+      width: 30%;
+      height: 3.2px;
+      background-color: $torch-red;
+      border: none;
+      margin-top: 16px;
+    }
+
+    &--delivery {
+      width: 150%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    bottom: 12.8px;
+    left: 86.4px;
+    border: none;
+    height: 3.2px;
+    width: 50%;
+    background-color: $torch-red;
+
+    &--select {
+      left: 0;
+      top: 44.8px;
+      bottom: 16px;
+    }
+
+    &--right {
+      bottom: 0;
+      left: 12.8px;
+      top: 44.8px;
+    }
+  }
+
+  &__pointer {
+    height: 16px;
+    position: relative;
+    top: 38.4px;
+    left: 5.6px;
+    color: $torch-red;
+
+    &--right {
+      top: 38.4px;
+      left: 148px;
+    }
+  }
+}

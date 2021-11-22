@@ -29,5 +29,15 @@
     color: $dove-gray;
     margin-top: 38.4px;
     font-size: 12.8px;
+
+    &--services{
+      margin-right: 400px;
+    }
   }
+
+  &--services{
+    margin-top: 50px;
+    margin-left: 90px;
+  }
+  
 }
