@@ -1,0 +1,32 @@
+.buttonapp{
+  @extend %align-center;
+  width: 178px;
+  color: $seashell-peach;
+  background-color: $black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &__grid{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 68px;
+  }
+
+  &__icon{
+    font-size: 30px;
+  }
+
+  &__text{
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  &:hover{
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}

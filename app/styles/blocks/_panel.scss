@@ -116,4 +116,13 @@
     @extend %flex-column;
     align-items: center;
   }
+
+  &--app{
+    @extend %space-between;
+    width: 100%;
+    background: $peach-cream;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-left: 50px;
+  }
 }

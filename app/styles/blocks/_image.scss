@@ -29,5 +29,15 @@
       top: -40px;
       background-image: none;
     }
+
+    &phone{
+      position: relative;
+      width: 700px;
+      height: 730px;
+      right: -300px;
+      top: 50px;
+      background-image: none;
+      transform: rotate(-15.33deg);
+    }
   }
 }

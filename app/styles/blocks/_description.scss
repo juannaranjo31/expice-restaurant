@@ -26,6 +26,10 @@
     &--foods {
       text-align: center;
     }
+
+    &--app{
+      width: 500px;
+    }
   }
 
   &__paragraph {
@@ -41,6 +45,11 @@
     &--foods {
       width: 500px;
       margin-top: 20px;
+    }
+
+    &--app{
+      width: 85%;
+      margin-left: 68px;
     }
   }
 
@@ -58,5 +67,20 @@
     margin-top: 20px;
     margin-right: 0;
     margin-left: 0;
+  }
+
+  &--app{
+    @extend %flex-column;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    margin-left: 100px;
+    border-left: none;
+    align-items: flex-start;
+  }
+
+  &--nospace{
+    margin: 0;
+    padding-right: 0;
   }
 }
