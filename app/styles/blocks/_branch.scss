@@ -1,0 +1,11 @@
+.branch{
+  height: 90vh;
+  width: 50%;
+  background-image: url('../../images/ellipsebg.png');
+  background-size: 200px;
+  background-repeat: round;
+
+  &__image{
+    height: 100%;
+  }
+}
