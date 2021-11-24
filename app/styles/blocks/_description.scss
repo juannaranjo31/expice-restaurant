@@ -16,11 +16,15 @@
     font-weight: 500;
     font-size: 38px;
 
-    &--booking{
+    &--booking {
       margin-top: 15px;
       margin-bottom: 35px;
       font-size: 30px;
       width: auto;
+    }
+
+    &--foods {
+      text-align: center;
     }
   }
 
@@ -30,14 +34,29 @@
     margin-top: 38.4px;
     font-size: 12.8px;
 
-    &--services{
+    &--services {
       margin-right: 400px;
+    }
+
+    &--foods {
+      width: 500px;
+      margin-top: 20px;
     }
   }
 
-  &--services{
+  &--services {
     margin-top: 50px;
     margin-left: 90px;
   }
-  
+
+  &--foods {
+    @extend %flex-column;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

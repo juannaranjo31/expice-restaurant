@@ -1,18 +1,18 @@
-.booking{
+.booking {
   @extend %align-center-columns;
   width: 1200px;
   height: 448px;
   background-color: $seashell-peach;
   margin-left: -300px;
 
-  &__line{
+  &__line {
     height: 11.2px;
     width: 13%;
     background-color: $torch-red;
     border: none;
   }
-  
-  &__filters{
+
+  &__filters {
     @extend %space-between;
     padding-left: 30px;
     padding-right: 30px;

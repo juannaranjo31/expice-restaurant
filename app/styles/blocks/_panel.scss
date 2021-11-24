@@ -103,11 +103,17 @@
     background: transparent;
   }
 
-  &--booking{
+  &--booking {
     @extend %align-center;
     width: 100%;
     background: $peach-cream;
     overflow-y: hidden;
     overflow-x: hidden;
+  }
+
+  &--foods {
+    width: 100%;
+    @extend %flex-column;
+    align-items: center;
   }
 }

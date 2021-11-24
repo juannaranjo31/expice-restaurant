@@ -12,7 +12,7 @@
     display: flex;
     justify-content: flex-end;
 
-    &--delivery{
+    &--delivery {
       justify-content: center;
     }
   }
@@ -38,10 +38,10 @@
     height: 50%;
     @extend %align-center;
 
-    &--delivery{
+    &--delivery {
       height: 75%;
       width: 30%;
-  }
+    }
   }
 
   &__img {
@@ -69,7 +69,6 @@
       align-items: center;
       justify-content: center;
     }
-    
   }
 
   &__paragraph {
